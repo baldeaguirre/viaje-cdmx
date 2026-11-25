@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viaje CDMX Noviembre 2026</title>
+    <meta name="application-name" content="Viaje CDMX" />
+    <meta name="apple-mobile-web-app-title" content="CDMX" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1d1d1f" media="(prefers-color-scheme: dark)" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="hark.css" />
+    <link rel="stylesheet" href="hark-hero.css" />
+    <style>
+      /* Screens 760px and narrower: the photo sits in the flow at its own shape, so the whole Ángel shows, base included, and the date label and title sit below it. */
+      @media (max-width: 760px) {
+        .hero .x-hero-img {
+          position: static;
+          display: block;
+          width: 100%;
+          height: auto;
+          aspect-ratio: 2400 / 1634;
+          object-fit: cover;
+          object-position: 50% 50%;
+        }
+        .hero:has(.x-hero-img)::after { display: none; }
+        .hero:has(.x-hero-img) .hero__copy { padding-top: 24px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page" id="top">
+      <header class="nav glass" data-auto></header>
+      <main class="main">
+        <section class="hero">
+          <img class="hero__img x-hero-img" src="hero_angel.jpg" alt="El Ángel de la Independencia sobre Paseo de la Reforma, Ciudad de México" />
+          <div class="hero__copy">
+            <p class="hero__eyebrow">CDMX · 25 al 28 de noviembre de 2026</p>
+            <h1>Viaje a la CDMX para The Hayley Williams Show</h1>
+            <p class="hero__sub">Vuelos, hospedaje y concierto en un solo lugar, para Baldemar Aguirre Fraire y María del Coral Fraire Huacuja.</p>
+            <p class="hero__meta">Saltillo (SLW) → CDMX (AIFA) · Mié 25 a sáb 28 · 2 viajeros · Concierto jue 26, Auditorio Nacional</p>
+          </div>
+          <aside class="callout" aria-label="Siguiente paso">
+            <p class="callout__head"><span class="hark-mark" data-size="16"></span> Siguiente paso</p>
+            <p class="callout__lead">
+              <strong>Hacer check-in del regreso (VB 9394, sáb 28) en la app de Viva.</strong> Los asientos aún no están seleccionados.
+            </p>
+            <a class="btn" href="#vuelos">Ver vuelos</a>
+          </aside>
+          <p class="hero__credit">Foto: el Ángel de la Independencia, cerca de la parada del Viva Bus y del hotel</p>
+        </section>
+
+        <section class="section" id="vuelos" data-nav="Vuelos">
+          <div class="head">
+            <p class="head__eyebrow">Viva Aerobus · Reservación CIUQKH</p>
+            <h2>Check-in de ida listo; falta el del regreso.</h2>
+            <p class="head__sub">Pases de abordar en la app de Viva.</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Vuelo</th>
+                  <th scope="col">Fecha</th>
+                  <th scope="col">Sale</th>
+                  <th scope="col">Llega</th>
+                  <th scope="col">Asientos</th>
+                  <th scope="col">Check-in</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">VB 9395 <small>Ida</small></th>
+                  <td>Mié 25 nov 2026</td>
+                  <td class="num">2:50 PM <small>Saltillo (SLW)</small></td>
+                  <td class="num">4:28 PM <small>AIFA</small></td>
+                  <td>Baldemar 30C <small>pasillo</small> María del Coral 21F <small>ventana</small></td>
+                  <td><span class="chip">Completado</span></td>
+                </tr>
+                <tr class="is-highlight">
+                  <th scope="row">VB 9394 <small>Regreso</small></th>
+                  <td>Sáb 28 nov 2026</td>
+                  <td class="num">12:45 PM <small>AIFA</small></td>
+                  <td class="num">2:13 PM <small>Saltillo (SLW)</small></td>
+                  <td class="muted">Sin seleccionar</td>
+                  <td><span class="chip chip--solid">Pendiente</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cards">
+            <div>
+              <h3>Tarifa Switch</h3>
+              <ul>
+                <li>Equipaje de mano 10 kg</li>
+                <li>Hasta 3 cambios gratis</li>
+                <li>Seguro de viaje y protección por imprevistos</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Viva Bus pagado, ida y vuelta</h3>
+              <p>Para los dos: AIFA → Ángel y Ángel → AIFA. En la taquilla GHO/Autovías de la Terminal Terrestre del AIFA, mostrar la confirmación CIUQKH en el celular (impresa cuesta $30).</p>
+              <ul>
+                <li>Mié 25: el de 17:30 (respaldo 19:00)</li>
+                <li>Sáb 28: salir del Ángel en el de 8:30 AM</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Datos</h3>
+              <ul>
+                <li>Reservación CIUQKH</li>
+                <li>Doters #7480185964</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="hospedaje" data-nav="Hospedaje">
+          <div class="head">
+            <p class="head__eyebrow">Kolben Nuoma · Río Ebro 28, Col. Cuauhtémoc</p>
+            <h2>Tres noches en la Cuauhtémoc, confirmadas.</h2>
+            <p class="head__sub"><span class="chip">Confirmado</span></p>
+          </div>
+          <div class="pair">
+            <div class="breakdown">
+              <dl>
+                <div class="row"><dt>Habitación <small>2 adultos</small></dt><dd>Ponska</dd></div>
+                <div class="row"><dt>Fechas <small>3 noches</small></dt><dd>25 al 28 nov</dd></div>
+                <div class="row"><dt>Check-in <small>En persona, con entrega de llave</small></dt><dd>16:00</dd></div>
+                <div class="row"><dt>Check-out</dt><dd>12:00</dd></div>
+                <div class="row"><dt>Reservación</dt><dd>2825231299073</dd></div>
+                <div class="row row--total"><dt>Total <small>Cobro automático a la tarjeta unos 3 días antes de llegar</small></dt><dd>MXN 4,153.86</dd></div>
+              </dl>
+            </div>
+            <aside class="callout" aria-label="Estado de la reserva">
+              <p class="callout__head">Confirmado</p>
+              <p class="callout__lead">
+                <strong>Departamento Ponska, confirmado por Silvia Vidales el 11 nov.</strong> Guardan las maletas si llegan antes de las 16:00.
+              </p>
+              <p class="fineprint">nuoma@kolbenbau.com · +52 55 4793 3846</p>
+              <div class="links">
+                <a class="btn" href="mailto:nuoma@kolbenbau.com">Enviar correo</a>
+                <a class="btn" href="tel:+525547933846">Llamar</a>
+                <a class="btn" href="https://www.google.com/maps/search/?api=1&query=R%C3%ADo%20Ebro%2028%2C%20Cuauht%C3%A9moc%2C%20CDMX" target="_blank" rel="noopener">Ver mapa</a>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section" id="concierto" data-nav="Concierto">
+          <div class="head">
+            <p class="head__eyebrow">Jueves 26 nov 2026 · 7:00 PM</p>
+            <h2>The Hayley Williams Show en el Auditorio Nacional.</h2>
+            <p class="head__sub"><span class="chip">Comprado</span></p>
+          </div>
+          <div class="pair">
+            <div class="breakdown">
+              <dl>
+                <div class="row"><dt>Lugar <small>Paseo de la Reforma 50, CDMX</small></dt><dd>Auditorio Nacional</dd></div>
+                <div class="row"><dt>Apertura de puertas</dt><dd>5:00 PM</dd></div>
+                <div class="row"><dt>Telonera</dt><dd>Annie DiRusso</dd></div>
+                <div class="row"><dt>Boletos <small>Móviles; el de María del Coral ya transferido y aceptado en su cuenta de Ticketmaster</small></dt><dd>2</dd></div>
+                <div class="row"><dt>Ubicación <small>Secciones distintas, no juntos</small></dt><dd>Piso 2</dd></div>
+                <div class="row"><dt>Orden Ticketmaster</dt><dd>34-31567/MX2</dd></div>
+                <div class="row"><dt>Orden Ticketmaster</dt><dd>34-31583/MX2</dd></div>
+              </dl>
+            </div>
+            <div class="aside">
+              <h3>Asientos separados</h3>
+              <p class="fineprint">Los dos boletos están en Piso 2 pero en secciones distintas. Acuerden un punto de encuentro antes y después del show.</p>
+              <h3>Qué no llevar</h3>
+              <p class="fineprint">Prohibido: cámaras, palos de selfie, comida, banderas y letreros. Las mochilas se guardan gratis frente a la Puerta 1.</p>
+              <div class="links">
+                <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Auditorio%20Nacional%2C%20Paseo%20de%20la%20Reforma%2050%2C%20CDMX" target="_blank" rel="noopener">Ver mapa</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="dias" data-nav="Día por día">
+          <div class="head">
+            <h2>Concierto el jueves, día libre el viernes y regreso el sábado.</h2>
+          </div>
+          <ol class="timeline">
+            <li>
+              <p class="timeline__when">Mié 25</p>
+              <div class="timeline__what">
+                <ul>
+                  <li>Salir de casa por cuenta propia</li>
+                  <li>Vuelo VB 9395, 2:50 PM SLW → AIFA 4:28 PM</li>
+                  <li>Viva Bus de 17:30 AIFA → Ángel de la Independencia (respaldo 19:00)</li>
+                  <li>Check-in en Kolben Nuoma, con entrega de llave</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__when">Cena · antes de 21:00</p>
+              <div class="timeline__what">
+                <p><strong>Cena: Santo Pozole</strong> <span class="pill">MX$100–200 p/p</span> <span class="pill">4.4–4.5 ★</span></p>
+                <p>Río Pánuco 214, Col. Cuauhtémoc, a pocas cuadras del Kolben Nuoma (se puede ir caminando). Cenaduría económica: pozole, enchiladas, pambazos y antojitos.</p>
+                <p>Miércoles 07:00 a 21:00: llegar antes de las 21:00. Sin reservación; se pide en mostrador. Tel. <a class="link" href="tel:+525527183308">+52 55 2718 3308</a>.</p>
+                <p><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Santo%20Pozole%2C%20R%C3%ADo%20P%C3%A1nuco%20214%2C%20Cuauht%C3%A9moc%2C%20CDMX" target="_blank" rel="noopener">Mapa</a> · <a class="link" href="https://www.cdmx365.com/public/es/santo-pozole" target="_blank" rel="noopener">Más info</a></p>
+              </div>
+            </li>
+          </ol>
+          <ol class="timeline">
+            <li>
+              <p class="timeline__when">Jue 26 · 10:15</p>
+              <div class="timeline__what">
+                <p><strong>Museo de Arte Moderno</strong> <span class="pill">MX$95</span> <span class="pill">1.5 a 2 h</span></p>
+                <p>Paseo de la Reforma y Gandhi. Martes a domingo 10:15 a 17:45. Entrada gratis con INAPAM. Incluye el jardín de esculturas.</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__when">12:15</p>
+              <div class="timeline__what">
+                <p><strong>Complejo Cultural Los Pinos</strong> <span class="pill">Entrada libre</span> <span class="pill">1.5 h</span></p>
+                <p>Martes a domingo 11:00 a 18:00. Unos 15 min en auto o 30 caminando por el bosque.</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__when">14:00</p>
+              <div class="timeline__what">
+                <p><strong>Tótem canadiense</strong> <span class="pill">15 a 20 min</span></p>
+                <p>A unos 400 m de Los Pinos, Calzada del Rey, detrás de la Puerta Quebradora.</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__when">15:00</p>
+              <div class="timeline__what">
+                <p><strong>Comida tardía en Sushi Itto Parque Aztlán</strong></p>
+                <p>Av. de los Compositores s/n, Aztlán Parque Urbano (2a sección del Bosque de Chapultepec). Tel. <a class="link" href="tel:+525591369178">55 9136 9178</a>. Cierra alrededor de las 7:50 PM.</p>
+                <p><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Sushi%20Itto%20Parque%20Aztl%C3%A1n%2C%20Av.%20de%20los%20Compositores%2C%20Bosque%20de%20Chapultepec%20II%20Secc%2C%20CDMX" target="_blank" rel="noopener">Ver en el mapa</a></p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__when">17:30</p>
+              <div class="timeline__what">DiDi al Auditorio Nacional: unos 3 km, 10 a 20 min según el tráfico. Puertas abren a las 5:00 PM.</div>
+            </li>
+            <li>
+              <p class="timeline__when">19:00</p>
+              <div class="timeline__what">
+                <p><strong>The Hayley Williams Show, Auditorio Nacional</strong></p>
+                <p>Acordar un punto de encuentro: los lugares están en secciones distintas.</p>
+              </div>
+              <p><span class="chip">Concierto</span></p>
+            </li>
+          </ol>
+          <ol class="timeline">
+            <li>
+              <p class="timeline__when">Vie 27 · 9:30</p>
+              <div class="timeline__what">
+                <p><strong>Zócalo y Catedral Metropolitana</strong> <span class="pill">Entrada libre</span> <span class="pill">1 h</span></p>
+                <p>Unos 20 a 25 min en DiDi o Metro desde la Col. Cuauhtémoc. Calcula como una hora con la plaza. Por ahora no hay recorridos a los campanarios.</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__when">10:45</p>
+              <div class="timeline__what">Caminata por Av. Madero hacia Bellas Artes: calle peatonal, unos 15 min.</div>
+            </li>
+            <li>
+              <p class="timeline__when">11:00</p>
+              <div class="timeline__what">
+                <p><strong>Museo del Palacio de Bellas Artes</strong> <span class="pill">MX$95</span> <span class="pill">1.5 h</span></p>
+                <p>Martes a domingo 10:00 a 18:00. Boletos solo en taquilla; gratis con INAPAM o credencial de estudiante o docente. Visitas guiadas gratis a las 12:00 (historia y arquitectura) y 12:30 (murales).</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__when">12:45</p>
+              <div class="timeline__what">
+                <p><strong>Café en Finca Don Porfirio</strong> <span class="pill">30 a 40 min</span></p>
+                <p>Piso 8 de Sears, Av. Juárez 14, justo enfrente. Abre 11:00 a 20:00. Hay menos fila antes de media tarde; barra con vista a Bellas Artes.</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__when">13:45</p>
+              <div class="timeline__what">Tiempo libre: Alameda Central y comida. Caminar hacia el poniente por Av. Juárez.</div>
+            </li>
+            <li>
+              <p class="timeline__when">16:30</p>
+              <div class="timeline__what">
+                <p><strong>Mirador del Monumento a la Revolución</strong> <span class="pill">MX$160 en línea · MX$170 en taquilla</span> <span class="pill">1 h</span></p>
+                <p>Unos 20 min a pie desde la Alameda. Los viernes abre 12:00 a 22:00. Elevador panorámico al mirador 360°. El atardecer es alrededor de las 6 PM.</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__when">19:00</p>
+              <div class="timeline__what">
+                <p><strong>Cena cerca del Ángel</strong> <span class="pill">10 min en DiDi</span></p>
+                <ul>
+                  <li><span class="dot">Recomendado</span> <strong>La Casa de Toño Zona Rosa</strong>, Londres 144. Pozole clásico, quesadillas y el flan de la abuela. Barato, rápido y abierto las 24 horas.</li>
+                  <li><strong>Alternativa: Wok'ando</strong>, Versalles 15, Col. Juárez. Cocina mexicana-asiática, como MX$375 por persona.</li>
+                </ul>
+                <p>Después de cenar, unos 10 min a pie al Kolben Nuoma en Río Ebro.</p>
+              </div>
+            </li>
+          </ol>
+          <ol class="timeline">
+            <li>
+              <p class="timeline__when">Sáb 28</p>
+              <div class="timeline__what">
+                <ul>
+                  <li>Check-out temprano (límite 12:00)</li>
+                  <li>Viva Bus de 8:30 AM, Ángel → AIFA</li>
+                  <li>Vuelo VB 9394 AIFA 12:45 PM → SLW 2:13 PM</li>
+                </ul>
+              </div>
+              <p><span class="chip">Bus 8:30 AM</span></p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" id="pendientes" data-nav="Pendientes">
+          <div class="head">
+            <h2>Solo queda una cosa antes de viajar.</h2>
+          </div>
+          <ul class="checklist">
+            <li>
+              <span class="checklist__item">Check-in del regreso (VB 9394) <small>Sáb 28, en la app de Viva</small></span
+              ><span class="chip chip--solid">Hacer ahora</span
+              ><span class="checklist__note">Reservación CIUQKH</span>
+            </li>
+            <li class="is-done">
+              <span class="checklist__item">Check-in de ida (VB 9395)</span
+              ><span class="checklist__note">30C y 21F</span>
+            </li>
+            <li class="is-done">
+              <span class="checklist__item">Kolben Nuoma confirmado</span
+              ><span class="checklist__note">11 nov</span>
+            </li>
+            <li class="is-done">
+              <span class="checklist__item">Boleto de María del Coral transferido</span
+              ><span class="checklist__note">Aceptado en Ticketmaster</span>
+            </li>
+            <li class="is-done">
+              <span class="checklist__item">Viva Bus pagado</span
+              ><span class="checklist__note">Ida y vuelta, los dos</span>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="foot">
+        <p>Itinerario compartido entre Baldemar y María del Coral · CDMX, noviembre 2026.</p>
+        <nav aria-label="Volver a las secciones" data-auto></nav>
+        <a class="badge" href="https://hark.com/" target="_blank" rel="noopener"
+          ><span class="hark-mark"></span><span>built by hark</span></a
+        >
+      </footer>
+    </div>
+    <script src="hark.js"></script>
+  <script>if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js");}</script>
+</body>
+</html>
